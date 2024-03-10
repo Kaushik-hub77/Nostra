@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <div class="bg-black flex justify-center gap-4 items-center ">
+        <h1 class=" text-xs md:text-xl text-white">Sign Up and GET 20% OFF for your first Order</h1>
+        <p class="text-xs md:text-xl text-white cursor-pointer" id="onex">X</p>
+    </div>
+
+
+    <nav class="navbars1">
+        <div class="flex items-center justify-between  relative">
+        <h1 class="font-extrabold text-blue-950 m-8 text-2xl">Nostra</h1>
+
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+            class="h-5 md:hidden cursor-pointer" style="position: absolute;
+            right: 10px;
+            ">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5">
+        </svg>
+
+
+        <div>
+            <ul class="flex gap-3 hidden md:flex">
+                <li class="hover:underline cursor-pointer font-medium">Home</li>
+                <li class="hover:underline cursor-pointer font-medium">New Arrival</li>
+                <li class="hover:underline cursor-pointer font-medium">Most-wanted</li>
+                <li class="hover:underline cursor-pointer font-medium">Collections</li>
+                <li class="hover:underline cursor-pointer font-medium">Contact Us</li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+
+    <div class="slider">
+        <div class="slides">
+            <img class="slide" src="./images/slider-one (1).jpg" alt="Image#1">
+            <img class="slide" src="./images/slider-one.jpg" alt="Image#2">
+            <img class="slide" src="./images/slider-one (2).jpg" alt="Image#3">
+        </div>
+        <button class="prev" onclick="prevSlide()">&#10094</button>
+        <button class="next" onclick="nextSlide()">&#10095</button>
+    </div>
+
+    <div>
+        <h1 class="font-extrabold text-blue-950 text-2xl m-5">Brands</h1>
+        <div class="font-container">
+            <div class="font-container__s1">
+                <img src="./images/puma.png">
+                <h1>Puma</h1>
+            </div>
+            <div class="font-container__s1">
+                <img src="images/adidas.png">
+                <h1>Adidas</h1>
+            </div>
+            <div class="font-container__s1">
+                <img src="./images/pepsi.png">
+                <h1>Simple</h1>
+            </div>
+            <div class="font-container__s1">
+                <img src="./images/two-leaves.png">
+                <h1>Leaves</h1>
+            </div>
+            <div class="font-container__s1">
+                <img src="./images/behance.png">
+                <h1>Behance</h1>
+            </div>
+            <div class="font-container__s1">
+                <img src="./images/twitch.png ">
+                <h1>Twitch</h1>
+            </div>
+            <div class="font-container__s1">
+                <img src="./images/two-leaves.png">
+                <h1>Leaves</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="assurance">
+        <h1 class="assurance__head">We Provide Best <br> Customer Experiences</h1>
+
+        <p class="assurance__para">|| We ensure that our customer have the best shopping experience</p>
+    </div>
+
+
+    <div class="service">
+        <div class="service__s1">
+            <img src="./images/check-mark (1).png" class="w-4 h-4">
+            <h3 class="font-bold">Original products</h3>
+            <p>Lorem ipsum dolor sit, amet ctetur adipisicing elit. Totam, ipsum!</p>
+        </div>
+        <div class="service__s2">
+            <img src="./images/smile.png" class="w-4 h-4">
+            <h3 class="font-bold">Satisfaction Guarantee</h3>
+            <p>Lorem ipsum dolor sit, amet ctetur adipisicing elit. Totam, ipsum!</p>
+        </div>
+        <div class="service__s3">
+            <img src="./images/mop-tool-to-clean-floors.png" class="w-4 h-4">
+            <h3 class="font-bold">New-Arrival Everyday</h3>
+            <p>Lorem ipsum dolor sit, amet ctetur adipisicing elit. Totam, ipsum!</p>
+        </div>
+        <div class="service__s4">
+            <img src="./images/fast-delivery.png" class="w-4 h-4">
+            <h3 class="font-bold">Fast and Free shipping</h3>
+            <p>Lorem ipsum dolor sit, amet ctetur adipisicing elit. Totam, ipsum!</p>
+        </div>
+    </div>
+
+    <div>
+        <h1 class="font-bold m-5 text-2xl ml-7">New Arrivals</h1>
+
+        <div class="newarrivals">
+            <div class="newarrivals__s1">
+              <img src="./images/f1.jpg">
+              <button class="btn">Shop Now→</button>
+            </div>
+            <div class="newarrivals__s1">
+              <img src="./images/f7.jpg">
+              <button class="btn">Shop Now→</button>
+            </div>
+            <div class="newarrivals__s1">
+              <img src="./images/n1.jpg">
+              <button class="btn">Shop Now→</button>
+            </div>
+            <div class="newarrivals__s1">
+              <img src="./images/n7.jpg">
+              <button class="btn">Shop Now→</button>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <h1 class="font-bold text-2xl m-7 ml-7">Most wanted</h1>
+
+        <div class="mostwanted">
+            <div class="mostwanted__s1">
+                <img src="./images/mw-1.jpg">
+                <p class="mostwanted__s1__sale">Sale</p>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+              <div class="mostwanted__s1">
+                <img src="./images/mw-2.jpg">
+                <p class="mostwanted__s1__sale">Sale</p>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+              <div class="mostwanted__s1">
+                <img src="./images/n1.jpg">
+               <p class="mostwanted__s1__sale">Sale</p>
+               <i class="fa-regular fa-heart"></i>
+              </div>
+              <div class="mostwanted__s1">
+                <img src="./images/n7.jpg">
+                <p class="mostwanted__s1__sale">Sale</p>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+        </div>
+    </div>
+
+    <div class="limitedoff">
+        <div class="limitdoff__s1">
+            <img src="./images/kendrick.jpg">
+        </div>
+
+        <div class="limitedoff__s2">
+         <h1 class="font-bold text-sm md:text-3xl text-gray-300">Limited Offer</h1>
+         <p class="text-white font-semibold text-xs md:text-xl">35% OFF on this for the first 30 Customers</p>
+        <button class="bg-white text-black p-1 rounded-sm">ShopNow→</button>
+        </div>
+    </div>
+
+    <div class="belowad">
+        <h1 class=" text-sm md:text-3xl font-extrabold text-center">Join our News Letter</h1>
+        <p class="font-thin text-xs md:text-xl text-center">Signup for our email newspaper to get exclusive discounts, updates, and more</p>
+    </div>
+
+    <div class="inputb">
+     <input type="text" class="inputb__1">
+    </div>
+    <div class="text-center mt-4">
+    <button class="bg-blue-900 p-1.5 md:p-3 rounded-xl text-xs md:text-xl text-white">Subscribe→</button>
+    </div>
+
+    <div class="m-5 bg-blue-900 ml-0 mr-0 p-10">
+            <h1 class="font-bold text-gray-200 text-sm md:text-3xl">Nostra</h1>
+            <p class="text-white text-gray-300  text-sm md:text-2xl">The Standard chunk of Lorem ipsum used since the 1500s is reprodused below for those interest</p>
+        <div class="text-white text-sm md:text-xl m-3" >
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-facebook"></i>
+        </div>
+        <div><h1 class="text-white text-xs md:text-xl">&copy; 2023 Nostra.com</h1></div>
+    </div>
+    <script src="home.js"></script>
+</body>
+
+</html>

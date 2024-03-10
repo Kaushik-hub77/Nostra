@@ -1,0 +1,272 @@
+.navbars1{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: white;
+    padding: -30px;
+}
+.slider{
+    position: relative;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+.slider img{
+    width: 100%;
+    display: none;
+}
+img.displaySlide{
+    display: block;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+.slider button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    padding: 10px 15px;
+    background-color: hsla(0, 0%, 0%, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.prev{
+    left: 0;
+}
+.next{
+    right: 0;
+}
+@keyframes fade {
+    from {opacity: .5}
+    to {opacity: 1}
+}
+
+
+
+.font-container{
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.font-container__s1{
+    height: 60px;
+    width: 60px;
+}
+
+.font-container__s1 h1{
+  font-size: 20px;
+}
+
+.assurance{
+    margin-top: 80px;  
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.assurance__head{
+   font-weight: bold;
+   font-size: 25px;
+}
+
+.service{
+    margin: 30px;
+    display: flex;
+    gap:5px;
+    border-radius: 10px;
+}
+
+.service__s1,.service__s2,.service__s3,.service__s4{
+    background-color: whitesmoke;
+    padding: 5px;
+    font-size: 15px;
+}
+
+.newarrivals{
+    display: flex;
+    justify-content: space-around;
+}
+
+.newarrivals__s1{
+    width: 250px;
+    height: 250px;
+    position: relative;
+}
+
+.newarrivals__s1 img{
+    width: 100%;
+    width: 100%;
+    border: solid 1px white;
+    border-radius: 10px;
+    opacity: 0.7;
+    animation: fade;
+    animation-duration: 4s;
+
+    
+}
+
+.btn{
+    background-color: wheat;
+    border: solid 1px transparent;
+    border-radius: 10px;
+    padding: 10px;
+    position: absolute;
+    top: 150px;
+    left: 70px;
+}
+
+@keyframes fade{
+  from{opacity: 0.5;}
+  to {opacity: 1;}
+}
+
+.mostwanted{
+    display: flex;
+    justify-content: space-around;
+}
+.mostwanted__s1{
+    width: 250px;
+    height: 250px;
+    position: relative;
+}
+
+.mostwanted__s1 img{
+    width: 100%;
+    width: 100%;
+    border: solid 1px white;
+    border-radius: 10px;
+    opacity: 0.7;
+}
+.mostwanted__s1__sale{
+    background-color: red;
+    color: white;
+    border: solid 1px transparent;
+    border-radius: 10px;
+    padding: 3px;
+    position: absolute;
+    top: 0px;
+    font-style: italic;
+}
+
+.mostwanted__s1 i{
+    position: absolute;
+    bottom: 3px;
+    right: 3px;
+}
+
+.limitedoff{
+    margin: 30px;
+    margin-left: 40px;
+    background-color: #002244;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.limitedoff__s1{
+    width: 200px;
+    height: 200px;
+}
+
+.limitedoff__s2{
+    margin-left: 5px;
+}
+
+.inputb{
+    display: flex;
+     border: solid 2px black;
+     width: 80%;
+     margin-left: 100px;
+     margin-top: 20px;
+}
+
+.inputb__1{
+    outline: none;
+    width: 60%;
+}
+@media screen and (max-width:600px){
+    .font-container__s1{
+        width: 20px;
+        height: 20px;
+        font-size: 10px;
+    }
+
+    .font-container__s1 h1{
+        font-size: 10px;
+        margin-left: -3px;
+    }
+
+    .assurance{
+        margin-top: 40px;
+        overflow-x: hidden;
+    }
+
+    .assurance__head{
+        font-size: 10px;
+    }
+
+    .assurance__para{
+        font-size: 10px;
+    }
+
+    .service__s1,.service__s2,.service__s3,.service__s4{
+           font-size: 5px;
+    }
+
+    .newarrivals__s1{
+        width: 150px;
+        height: 150px;
+        position: relative;
+    }
+
+    .btn{
+        font-size: 5px;
+        position: absolute;
+        top: 80px;
+        left: 41px;
+        padding: 2px;
+    }
+
+    .mostwanted__s1{
+        width: 150px;
+        height: 150px;
+        position: relative;
+    }
+
+    .mostwanted__s1__sale{
+        font-size: 5px;
+        padding: 1px;
+        position: absolute;
+    }
+
+
+    .limitedoff{
+        overflow-x: hidden;
+    }
+    .mostwanted__s1 i{
+        position: absolute;
+        top: 80px;
+    }
+
+    .limitedoff__s2{
+        font-size: 5px;
+    }
+
+    .inputb{
+        width: 50%;
+        margin-top: 5px;
+    }
+
+    .inputb__1{
+        width: 100%;
+    }
+
+
+
+       
+}
