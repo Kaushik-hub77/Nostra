@@ -16,27 +16,7 @@ closenav.addEventListener("click", function () {
     sidenav.style.left = "-50%"
 })
 
-var inp= document.getElementById()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 document.addEventListener('DOMContentLoaded', function () {
-    // Get all the checkboxes
     var checkboxes = document.querySelectorAll('input[type="checkbox"]');
 
     // Add event listeners to each checkbox
@@ -56,9 +36,8 @@ document.addEventListener('DOMContentLoaded', function () {
                     // Get the value of the checked checkbox
                     var checkboxValue = checkedCheckbox.nextSibling.nodeValue.trim();
 
-                    // Filter and hide product items that do not match the checkbox value
                     productItems.forEach(function (productItem) {
-                        const productName = productItem.querySelector('h1').textContent.trim();
+                        const productName = productItem.querySelector("h1").textContent.trim();
                         if (!productName.includes(checkboxValue)) {
                             productItem.style.display = 'none';
                         }
