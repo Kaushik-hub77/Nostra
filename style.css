@@ -180,8 +180,8 @@ img.displaySlide{
 .inputb{
     display: flex;
      border: solid 2px black;
-     width: 80%;
-     margin-left: 100px;
+     width: 50%;
+     margin-left: 350px;
      margin-top: 20px;
 }
 
@@ -189,6 +189,122 @@ img.displaySlide{
     outline: none;
     width: 60%;
 }
+
+.input{
+    position: relative;
+    right: 30px;
+    top: 70px;
+}
+
+.inpb{
+    position: relative;
+    left: 250px;
+    border: solid 1px black;
+    height: fit-content;
+    width: 60%;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#wuff{
+    right: 2px;
+    top: 10px;
+    height: 2px;
+
+}
+
+.inpb input{
+    width: 100%;
+    outline: none;
+}
+
+.newarrivals1{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    position: absolute;
+    top: 200px;
+    left: 300px;
+}
+
+.newarrivals__s11{
+    width: 250px;
+    height: 250px;
+    position: relative;
+}
+
+.newarrivals__s11 img{
+    width: 100%;
+    width: 100%;
+    border: solid 1px white;
+    border-radius: 10px;
+}
+
+.newarrivals2{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    position: absolute;
+    top: 520px;
+    left: 300px;
+}
+
+.newarrivals__s12{
+    width: 250px;
+    height: 250px;
+    position: relative;
+}
+
+.newarrivals__s12 img{
+    width: 100%;
+    width: 100%;
+    border: solid 1px white;
+    border-radius: 10px;
+}
+
+.newarrivals3{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    position: absolute;
+    top: 850px;
+    left: 300px;
+}
+
+.newarrivals__s13{
+    width: 250px;
+    height: 250px;
+    position: relative;
+}
+
+.newarrivals__s13 img{
+    width: 100%;
+    width: 100%;
+    border: solid 1px white;
+    border-radius: 10px;
+}
+
+.margin{
+    margin-top: 700px;
+
+}
+
+.inputb1{
+    border: solid 1px black;
+    width: 80%;
+    position: relative;
+    left: 120px;
+
+}
+
+.inputb__11{
+    width: 60%;
+    outline: none;
+}
+
+
+
+
 @media screen and (max-width:600px){
     .font-container__s1{
         width: 20px;
@@ -260,13 +376,93 @@ img.displaySlide{
     .inputb{
         width: 50%;
         margin-top: 5px;
+        margin-left: 115px;
+        position: relative;
     }
 
     .inputb__1{
-        width: 100%;
+        width: 30%;
+    }
+
+    .inpb{
+        position: relative;
+        left: 50px;
+        border: solid 1px black;
+        height: fit-content;
+        width: 60%;
+        border-radius: 5px;
+        overflow-x: hidden;
+    }
+
+    .newarrivals1{
+        right: 0px;
+        position: absolute;
+        left: 120px;
+        top: 170px;
+        gap: 10px;
+        margin-bottom: 5px;
+    }
+
+    .newarrivals__s11{
+        width: 80px;
+        height: 80px;
+    }
+
+    .newarrivals__s11 h1{
+        font-size: 8px;
+        text-align: center;
     }
 
 
+    .newarrivals2{
+        right: 0px;
+        position: absolute;
+        left: 120px;
+        top: 270px;
+        gap: 10px;
+    }
 
+    .newarrivals__s12{
+        width: 80px;
+        height: 80px;
+    }
+
+    .newarrivals__s12 h1{
+        font-size: 8px;
+        text-align: center;
+    }
+
+    .newarrivals3{
+        right: 0px;
+        position: absolute;
+        left: 120px;
+        top: 370px;
+        gap: 10px;
+    }
+
+    .newarrivals__s13{
+        width: 80px;
+        height: 80px;
+    }
+
+    .newarrivals__s13 h1{
+        font-size: 8px;
+        text-align: center;
+    }
+
+    .margin{
+        margin-top: 150px;
+    }
+
+    .inputb1{
+        border: solid 1px black;
+        width: 50%;
+        position: relative;
+        left: 100px;
+    }
+
+    .inputb__11{
+        width: 50%;
+    }
        
 }

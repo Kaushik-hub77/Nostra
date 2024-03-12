@@ -22,27 +22,39 @@
 
     <nav class="navbars1">
         <div class="flex items-center justify-between  relative">
-        <h1 class="font-extrabold text-blue-950 m-8 text-2xl">Nostra</h1>
+            <h1 class="font-extrabold text-blue-950 m-8 text-2xl">Nostra</h1>
 
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-            class="h-5 md:hidden cursor-pointer" style="position: absolute;
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" id="menuicon" class="h-5 md:hidden cursor-pointer" style="position: absolute;
             right: 10px;
             ">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5">
-        </svg>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5">
+            </svg>
 
-
-        <div>
-            <ul class="flex gap-3 hidden md:flex">
-                <li class="hover:underline cursor-pointer font-medium">Home</li>
-                <li class="hover:underline cursor-pointer font-medium">New Arrival</li>
-                <li class="hover:underline cursor-pointer font-medium">Most-wanted</li>
-                <li class="hover:underline cursor-pointer font-medium">Collections</li>
-                <li class="hover:underline cursor-pointer font-medium">Contact Us</li>
-            </ul>
-        </div>
+            <div>
+                <ul class="flex gap-3 hidden md:flex">
+                    <li class="hover:underline cursor-pointer font-medium">Home</li>
+                    <li class="hover:underline cursor-pointer font-medium">New Arrival</li>
+                    <li class="hover:underline cursor-pointer font-medium">Most-wanted</li>
+                    <li class="hover:underline cursor-pointer font-medium"><a href="collection.html">Collections</a></li>
+                    <li class="hover:underline cursor-pointer font-medium"><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
+    <div id="sidenavbar" class="flex flex-col gap-3 bg-blue-900 text-gray-300 z-40 fixed top-0 left-0"
+        style="width: 50%; height: 100vh; left:-50%;">
+        <div class="text-right p-5">
+            <p id="closenav" style="cursor: pointer;">X</p>
+        </div>
+        <ul class="flex flex-col gap-10 items-center text-gray-300">
+            <li class="hover:underline cursor-pointer font-medium">Home</li>
+            <li class="hover:underline cursor-pointer font-medium">New Arrival</li>
+            <li class="hover:underline cursor-pointer font-medium">Most-wanted</li>
+            <li class="hover:underline cursor-pointer font-medium"><a href="collection.html">Collections</a></li>
+            <li class="hover:underline cursor-pointer font-medium"><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </div>
 
     <div class="slider">
         <div class="slides">
@@ -123,20 +135,20 @@
 
         <div class="newarrivals">
             <div class="newarrivals__s1">
-              <img src="./images/f1.jpg">
-              <button class="btn">Shop Now→</button>
+                <img src="./images/f1.jpg">
+                <button class="btn">Shop Now→</button>
             </div>
             <div class="newarrivals__s1">
-              <img src="./images/f7.jpg">
-              <button class="btn">Shop Now→</button>
+                <img src="./images/f7.jpg">
+                <button class="btn">Shop Now→</button>
             </div>
             <div class="newarrivals__s1">
-              <img src="./images/n1.jpg">
-              <button class="btn">Shop Now→</button>
+                <img src="./images/n1.jpg">
+                <button class="btn">Shop Now→</button>
             </div>
             <div class="newarrivals__s1">
-              <img src="./images/n7.jpg">
-              <button class="btn">Shop Now→</button>
+                <img src="./images/n7.jpg">
+                <button class="btn">Shop Now→</button>
             </div>
         </div>
     </div>
@@ -149,22 +161,22 @@
                 <img src="./images/mw-1.jpg">
                 <p class="mostwanted__s1__sale">Sale</p>
                 <i class="fa-regular fa-heart"></i>
-              </div>
-              <div class="mostwanted__s1">
+            </div>
+            <div class="mostwanted__s1">
                 <img src="./images/mw-2.jpg">
                 <p class="mostwanted__s1__sale">Sale</p>
                 <i class="fa-regular fa-heart"></i>
-              </div>
-              <div class="mostwanted__s1">
+            </div>
+            <div class="mostwanted__s1">
                 <img src="./images/n1.jpg">
-               <p class="mostwanted__s1__sale">Sale</p>
-               <i class="fa-regular fa-heart"></i>
-              </div>
-              <div class="mostwanted__s1">
+                <p class="mostwanted__s1__sale">Sale</p>
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="mostwanted__s1">
                 <img src="./images/n7.jpg">
                 <p class="mostwanted__s1__sale">Sale</p>
                 <i class="fa-regular fa-heart"></i>
-              </div>
+            </div>
         </div>
     </div>
 
@@ -174,33 +186,38 @@
         </div>
 
         <div class="limitedoff__s2">
-         <h1 class="font-bold text-sm md:text-3xl text-gray-300">Limited Offer</h1>
-         <p class="text-white font-semibold text-xs md:text-xl">35% OFF on this for the first 30 Customers</p>
-        <button class="bg-white text-black p-1 rounded-sm">ShopNow→</button>
+            <h1 class="font-bold text-sm md:text-3xl text-gray-300">Limited Offer</h1>
+            <p class="text-white font-semibold text-xs md:text-xl">35% OFF on this for the first 30 Customers</p>
+            <button class="bg-white text-black p-1 rounded-sm">ShopNow→</button>
         </div>
     </div>
 
     <div class="belowad">
         <h1 class=" text-sm md:text-3xl font-extrabold text-center">Join our News Letter</h1>
-        <p class="font-thin text-xs md:text-xl text-center">Signup for our email newspaper to get exclusive discounts, updates, and more</p>
+        <p class="font-thin text-xs md:text-xl text-center">Signup for our email newspaper to get exclusive discounts,
+            updates, and more</p>
     </div>
 
     <div class="inputb">
-     <input type="text" class="inputb__1">
+        <input type="text" class="inputb__1">
     </div>
     <div class="text-center mt-4">
-    <button class="bg-blue-900 p-1.5 md:p-3 rounded-xl text-xs md:text-xl text-white">Subscribe→</button>
+        <button class="bg-blue-900 p-1.5 md:p-3 rounded-xl text-xs md:text-xl text-white">Subscribe→</button>
     </div>
 
+
     <div class="m-5 bg-blue-900 ml-0 mr-0 p-10">
-            <h1 class="font-bold text-gray-200 text-sm md:text-3xl">Nostra</h1>
-            <p class="text-white text-gray-300  text-sm md:text-2xl">The Standard chunk of Lorem ipsum used since the 1500s is reprodused below for those interest</p>
-        <div class="text-white text-sm md:text-xl m-3" >
+        <h1 class="font-bold text-gray-200 text-sm md:text-3xl">Nostra</h1>
+        <p class="text-white text-gray-300  text-sm md:text-2xl">The Standard chunk of Lorem ipsum used since the 1500s
+            is reprodused below for those interest</p>
+        <div class="text-white text-sm md:text-xl m-3">
             <i class="fa-brands fa-instagram"></i>
             <i class="fa-brands fa-twitter"></i>
             <i class="fa-brands fa-facebook"></i>
         </div>
-        <div><h1 class="text-white text-xs md:text-xl">&copy; 2023 Nostra.com</h1></div>
+        <div>
+            <h1 class="text-white text-xs md:text-xl">&copy; 2023 Nostra.com</h1>
+        </div>
     </div>
     <script src="home.js"></script>
 </body>
